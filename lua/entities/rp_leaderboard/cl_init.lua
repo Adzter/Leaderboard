@@ -16,60 +16,60 @@ function ENT:Draw()
 		draw.SimpleText( leaderboardConfig.title, "Trebuchet18", 0, -90, leaderboardConfig.titleColor, 1, 1 )
 		
 		if self:GetNWString( "1name", false ) then
-			draw.RoundedBox( 0, -215, -75, 215, 25, leaderboardConfig.bgColors[1] )
-			draw.SimpleText( self:GetNWString( "1name" ) .. " - $" .. string.Comma( self:GetNWString( "1wallet" ) ), "Trebuchet18", -100, -65, leaderboardConfig.textColors[1], 1, 1 )
+			draw.RoundedBox( 0, -215, -75, 210, 25, leaderboardConfig.bgColors[1] )
+			draw.SimpleText( self:GetNWString( "1name" ) .. " - $" .. string.Comma( self:GetNWString( "1wallet" ) ), "Trebuchet18", -110, -65, leaderboardConfig.textColors[1], 1, 1 )
 		end
 		
 		if self:GetNWString( "2name", false ) then
-			draw.RoundedBox( 0, -215, -45, 215, 25, leaderboardConfig.bgColors[2] )
-			draw.SimpleText( self:GetNWString( "2name" ) .. " - $" .. string.Comma( self:GetNWString( "2wallet" ) ), "Trebuchet18", -100, -35, leaderboardConfig.textColors[2], 1, 1 )
+			draw.RoundedBox( 0, -215, -45, 210, 25, leaderboardConfig.bgColors[2] )
+			draw.SimpleText( self:GetNWString( "2name" ) .. " - $" .. string.Comma( self:GetNWString( "2wallet" ) ), "Trebuchet18", -110, -35, leaderboardConfig.textColors[2], 1, 1 )
 		end
 		
 		if self:GetNWString( "3name", false ) then
-			draw.RoundedBox( 0, -215, -15, 215, 25, leaderboardConfig.bgColors[3] )
-			draw.SimpleText( self:GetNWString( "3name" ) .. " - $" .. string.Comma( self:GetNWString( "3wallet" ) ), "Trebuchet18", -100, -5, leaderboardConfig.textColors[3], 1, 1 )
+			draw.RoundedBox( 0, -215, -15, 210, 25, leaderboardConfig.bgColors[3] )
+			draw.SimpleText( self:GetNWString( "3name" ) .. " - $" .. string.Comma( self:GetNWString( "3wallet" ) ), "Trebuchet18", -110, -5, leaderboardConfig.textColors[3], 1, 1 )
 		end
 		
 		if self:GetNWString( "4name", false ) then
-			draw.RoundedBox( 0, -215, 25, 215, 25, leaderboardConfig.bgColors[4] )
-			draw.SimpleText( self:GetNWString( "4name" ) .. " - $" .. string.Comma( self:GetNWString( "4wallet" ) ), "Trebuchet18", -100, 35, leaderboardConfig.textColors[4], 1, 1 )
+			draw.RoundedBox( 0, -215, 25, 210, 25, leaderboardConfig.bgColors[4] )
+			draw.SimpleText( self:GetNWString( "4name" ) .. " - $" .. string.Comma( self:GetNWString( "4wallet" ) ), "Trebuchet18", -110, 35, leaderboardConfig.textColors[4], 1, 1 )
 		end
 		
 		if self:GetNWString( "5name", false ) then
-			draw.RoundedBox( 0, -215, 55, 215, 25, leaderboardConfig.bgColors[4] )
-			draw.SimpleText( self:GetNWString( "5name" ) .. " - $" .. string.Comma( self:GetNWString( "5wallet" ) ), "Trebuchet18", -100, 65, leaderboardConfig.textColors[4], 1, 1 )
+			draw.RoundedBox( 0, -215, 55, 210, 25, leaderboardConfig.bgColors[4] )
+			draw.SimpleText( self:GetNWString( "5name" ) .. " - $" .. string.Comma( self:GetNWString( "5wallet" ) ), "Trebuchet18", -110, 65, leaderboardConfig.textColors[4], 1, 1 )
 		end
 		
 		------------------------------------------------------------------------------------
 
 		if self:GetNWString( "1timename", false ) then
-			draw.RoundedBox( 0, 5, -75, 190, 25, leaderboardConfig.bgColors[1] )
-			draw.SimpleText( self:GetNWString( "1timename" ), "Trebuchet18", 100, -67, leaderboardConfig.textColors[1], 1, 1 )
-			draw.SimpleText( timeToStr( self:GetNWString( "1time" ) ), "leaderboardSmall", 100, -56, leaderboardConfig.textColors[1], 1, 1 )
+			draw.RoundedBox( 0, 5, -75, 210, 25, leaderboardConfig.bgColors[1] )
+			draw.SimpleText( self:GetNWString( "1timename" ), "Trebuchet18", 110, -67, leaderboardConfig.textColors[1], 1, 1 )
+			draw.SimpleText( timeToStr( self:GetNWString( "1time" ) ), "leaderboardSmall", 110, -56, leaderboardConfig.textColors[1], 1, 1 )
 		end
 		
 		if self:GetNWString( "2timename", false ) then
-			draw.RoundedBox( 0, 5, -45, 190, 25, leaderboardConfig.bgColors[2] )
-			draw.SimpleText( self:GetNWString( "2timename" ), "Trebuchet18", 100, -37, leaderboardConfig.textColors[2], 1, 1 )
-			draw.SimpleText( timeToStr( self:GetNWString( "2time" ) ), "leaderboardSmall", 100, -26, leaderboardConfig.textColors[2], 1, 1 )
+			draw.RoundedBox( 0, 5, -45, 210, 25, leaderboardConfig.bgColors[2] )
+			draw.SimpleText( self:GetNWString( "2timename" ), "Trebuchet18", 110, -37, leaderboardConfig.textColors[2], 1, 1 )
+			draw.SimpleText( timeToStr( self:GetNWString( "2time" ) ), "leaderboardSmall", 110, -26, leaderboardConfig.textColors[2], 1, 1 )
 		end
 		
 		if self:GetNWString( "3timename", false ) then
-			draw.RoundedBox( 0, 5, -15, 190, 25, leaderboardConfig.bgColors[3] )
-			draw.SimpleText( self:GetNWString( "3timename" ), "Trebuchet18", 100, -7, leaderboardConfig.textColors[3], 1, 1 )
-			draw.SimpleText( timeToStr( self:GetNWString( "3time" ) ), "leaderboardSmall", 100, 4, leaderboardConfig.textColors[3], 1, 1 )
+			draw.RoundedBox( 0, 5, -15, 210, 25, leaderboardConfig.bgColors[3] )
+			draw.SimpleText( self:GetNWString( "3timename" ), "Trebuchet18", 110, -7, leaderboardConfig.textColors[3], 1, 1 )
+			draw.SimpleText( timeToStr( self:GetNWString( "3time" ) ), "leaderboardSmall", 110, 4, leaderboardConfig.textColors[3], 1, 1 )
 		end
 		
 		if self:GetNWString( "4timename", false ) then
-			draw.RoundedBox( 0, 5, 25, 190, 25, leaderboardConfig.bgColors[4] )
-			draw.SimpleText( self:GetNWString( "4timename" ), "Trebuchet18", 100, 33, leaderboardConfig.textColors[4], 1, 1 )
-			draw.SimpleText( timeToStr( self:GetNWString( "4time" ) ), "leaderboardSmall", 100, 45, leaderboardConfig.textColors[4], 1, 1 )
+			draw.RoundedBox( 0, 5, 25, 210, 25, leaderboardConfig.bgColors[4] )
+			draw.SimpleText( self:GetNWString( "4timename" ), "Trebuchet18", 110, 33, leaderboardConfig.textColors[4], 1, 1 )
+			draw.SimpleText( timeToStr( self:GetNWString( "4time" ) ), "leaderboardSmall", 110, 45, leaderboardConfig.textColors[4], 1, 1 )
 		end
 		
 		if self:GetNWString( "5timename", false ) then
-			draw.RoundedBox( 0, 5, 55, 190, 25, leaderboardConfig.bgColors[4] )
-			draw.SimpleText( self:GetNWString( "5timename" ), "Trebuchet18", 100, 63, leaderboardConfig.textColors[4], 1, 1 )
-			draw.SimpleText( timeToStr( self:GetNWString( "5time" ) ), "leaderboardSmall", 100, 75, leaderboardConfig.textColors[4], 1, 1 )
+			draw.RoundedBox( 0, 5, 55, 210, 25, leaderboardConfig.bgColors[4] )
+			draw.SimpleText( self:GetNWString( "5timename" ), "Trebuchet18", 110, 63, leaderboardConfig.textColors[4], 1, 1 )
+			draw.SimpleText( timeToStr( self:GetNWString( "5time" ) ), "leaderboardSmall", 110, 75, leaderboardConfig.textColors[4], 1, 1 )
 		end
 	cam.End3D2D()
 end
