@@ -17,6 +17,7 @@ leaderboardConfig.bgColors = {}		--Ignore this
 leaderboardConfig.textColors = {}	--Ignore this
 
 leaderboardConfig.updateTime = 300		-- Time, in seconds, to update the leaderboard (default 5 minutes)
+leaderboardConfig.maxNameLength = 14
 
 leaderboardConfig.bg = Color( 0, 0, 0 )					-- Background colour
 leaderboardConfig.title = "Leaderboard"					-- Title text
